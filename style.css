@@ -49,12 +49,13 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .shadow-main {
     position: absolute;
     width: 100%;
     left: 0;
     right: 0;
+    /* top: 200px; */
     margin: 0 auto;
     overflow: hidden;
     height: 75px;
@@ -78,7 +79,7 @@
 }
 
 .navbar-light .navbar-toggler {
-  background-color: white;
+  /* background-color: white; */
   /* border-color: white */
   border: none;
 }
@@ -89,7 +90,7 @@
   border: none;
 }
 .navbar-light .navbar-toggler:active {
-  background-color: white;
+  /* background-color: white; */
   /* border-color: white */
   border: none;
 }
@@ -604,16 +605,26 @@ section {
   padding-right: 15px;
   padding-left: 15px;
 }
-
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+}
 .card-sec {
-  background-color: rgb(227, 232, 240);
-  border-radius: 4%;
+  background-color: rgb(231, 236, 245);
+  /* border-radius: 4%; */
 }
 .circular--portrait {
   position: relative;
   /* z-index: 1; */
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -627,4 +638,268 @@ section {
 /* .person {
   display: flex;
 
+} */
+.icon-demo .bi,
+.icon-demo-examples .bi {
+  width: 1em;
+  height: 1em;
+  /* color: yellow; */
+}
+.fs-4 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+  color: rgb(253, 159, 0);
+  opacity: 0.9;
+  /* border: 2px solid rgb(253, 159, 0); Set border properties */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); Set box shadow properties */
+}
+
+.grey-text {
+  font-size: medium;
+  color: rgb(179, 179, 179);
+  margin-top: -2.2px;
+}
+.card-link {
+  text-decoration: none;
+  color: rgb(57, 176, 58);
+}
+
+.card-text {
+  margin-bottom: -5px;
+}
+
+@media (min-width: 992px) {
+  .faq-section {
+    padding: 75px 0;
+    margin-top: 0;
+  }
+}
+
+.faq-section {
+  padding: 60px 0;
+  background-color: #232a35;
+  overflow: hidden;
+}
+.border-rad-t-l {
+  border-radius: 100px 0 0 0;
+}
+@media (min-width: 992px) {
+  .after-14 {
+    width: 130px;
+    top: 70px;
+    left: 9%;
+  }
+}
+
+.after-14 {
+  width: 80px;
+  top: 24px;
+  left: 15%;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+@media (min-width: 992px) {
+  .after-15 {
+    width: 150px;
+  }
+}
+.after-15 {
+  width: 100px;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 992px) {
+  .heading-p {
+    background-color: transparent;
+    box-shadow: none;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+.heading-p {
+  padding: 0 15px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .heading-p h2 {
+    font-size: 31px;
+    font-weight: 700;
+  }
+}
+
+.heading-p h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  .faq-s-inner {
+    max-width: 450px;
+    margin: 50px auto 0;
+  }
+}
+.faq-s-inner {
+  border: 2px solid #39af39;
+  border-radius: 13px;
+  margin-top: 54px;
+}
+.faq-s-inner .row {
+  justify-content: space-between;
+}
+.faq-s-inner .col-4:first-child.active-q {
+  border-radius: 9px 0 0 9px;
+}
+.faq-s-inner .col-4 {
+  padding: 20px 10px;
+}
+.active-q {
+  background-color: #39af39;
+}
+
+.faq-s-inner .col-4:hover .faq-icn-1,
+.faq-s-inner .col-4.active-q .faq-icn-1 {
+  background: url(/images/faq-icon-1-hover.svg) no-repeat center center;
+  background-size: 100%;
+}
+.faq-icn-1 {
+  background: url(../../img/faq-icon-1.svg) no-repeat center center;
+  background-size: 100%;
+}
+
+.faq-icn {
+  width: 42px;
+  height: 42px;
+}
+.faq-s-inner .faq-info h3 {
+  margin: 12px 0 0;
+  font-size: 15px;
+  color: #fff;
+  line-height: 20px;
+}
+
+.faq-icn-2 {
+  background: url(/images//faq-icon-2.svg) no-repeat center center;
+  background-size: 80%;
+}
+
+.col-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.faq-icn-3 {
+  background: url(/images//faq-icon-3.svg) no-repeat center center;
+  background-size: 100%;
+}
+
+@media (min-width: 992px) {
+  .question-box2 {
+    margin: 56px 0 63px;
+  }
+}
+.question-box2 {
+  margin: 53px 0;
+}
+
+.question-box2 li:first-child .accordion {
+  border-top: none;
+}
+.accordion {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px 25px 13px 0;
+  width: 100%;
+  border: 0;
+  text-align: left;
+  outline: 0;
+  font-size: 18px;
+  transition: 0.3s;
+  /* border-bottom: 1px solid #676a6f; */
+  position: relative;
+}
+
+.accordion:after {
+  position: absolute;
+  right: 2px;
+
+  content: url(" /images/download.svg ");
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font: normal normal normal 28px/1 FontAwesome;
+  background: 0;
+  top: 12px;
+  bottom: 0;
+  color: #39af39;
+}
+.active-acordion:after {
+  content: url("/images/download.svg");
+}
+li {
+  list-style-type: none;
+}
+.panel-faqs {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  color: #fff;
+  font-size: 14px;
+}
+.panel-faqs p {
+  margin: 0;
+  padding: 0 0 14px;
+  color: #cdcdcd;
+  font-size: 16px;
+}
+.inhe-a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+.accordion-item {
+  background: transparent;
+}
+.accordion-button:not(.collapsed)::after {
+  /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
+  transform: rotate(-180deg);
+}
+.accordion-body {
+  padding: 1rem 1.25rem;
+  color: white;
+}
+
+.accordion-button {
+  color: #39b039;
+}
+.accordion-body {
+  padding: 2px;
+}
+/* .star-empty {
+  color: rgb(231, 236, 245);
+} */
+.fs-4:nth-of-type(4) {
+  color: rgb(231, 236, 245);
+}
+
+/* .navbar-toggler {
+  margin-left: -10px;
+} */
+/* @media (max-width: 992px) {
 } */
