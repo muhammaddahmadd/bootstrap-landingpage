@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/slick-theme.css"/>
+    <link rel="stylesheet" href="/css/slick.css"/>
 
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar px-5 py-2 navbar-expand-lg navbar-light bg">
+    <nav class="navbar py-2 navbar-expand-lg  navbar-light bg">
       <div class="shadow-main">
         <div class="shadow-inner"></div>
       </div>
-      <div class="container-fluid py-3">
+      <div class="container py-3 ">
         <img
-          class="d-none d-lg-block"
+          class="d-none px-2 d-inline-block d-lg-block"
           src="/images/logo.png"
           width="84"
           height="27"
@@ -30,7 +32,10 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon ">
+
+            <!-- <i class="fa-solid fa-bars"></i> -->
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 text-white mb-lg-0">
@@ -74,56 +79,12 @@
             </li>
           </ul>
 
-          <button class="btn btn-outline-success" type="submit">Buy Now</button>
+         <button class="btn px-4  btn-outline-success" type="submit" style="font-size: 12px;">Buy Now</button>
+
         </div>
       </div>
     </nav>
-    <!-- <div
-      class="counter-mob-head counter-mob-head-event d-md-none align-items-center justify-content-center"
-    >
-      <span class="count-exp count-exp-event">40% OFF </span>
-      <div class="counter-main m-l-10 m-r-10">
-        <div id="countdown1" class="countdownHolder">
-          <div class="clear"></div>
-          <span class="countDays">
-            <span class="position">
-              <span class="digit static" style="top: 0px; opacity: 1">0</span>
-            </span>
-            <span class="position">
-              <span class="digit static" style="top: 0px; opacity: 1">0</span>
-            </span>
-          </span>
-          <span class="countDiv countDiv0"></span>
-          <span class="countHours">
-            <span class="position">
-              <span class="digit static" style="top: 0px; opacity: 1">0</span>
-            </span>
-            <span class="position">
-              <span class="digit static" style="top: 0px; opacity: 1">0</span>
-            </span>
-          </span>
-          <span class="countDiv countDiv1"></span>
-          <span class="countMinutes">
-            <span class="position">
-              <span class="digit static" style="top: 0px; opacity: 1">0</span>
-            </span>
-            <span class="position">
-              <span class="digit static" style="top: 0px; opacity: 1">0</span>
-            </span>
-          </span>
-          <span class="countDiv countDiv2"></span>
-          <span class="countSeconds">
-            <span class="position">
-              <span class="digit static" style="top: 0px; opacity: 1">0</span>
-            </span>
-            <span class="position">
-              <span class="digit static" style="top: 0px; opacity: 1">0</span>
-            </span>
-          </span>
-        </div>
-      </div>
-      <a class="buy-now-header-event" href="buy-now.html">Buy Now</a>
-    </div> -->
+    
 
     <section class="home-top-banner bg border-rad-r-b">
       <div class="top-banner-decoration">
@@ -133,7 +94,7 @@
           alt="dots"
         />
         <img
-          class="top-grill p-absolute ls-is-cached lazyloaded"
+          class="top-grill p-absolute  ls-is-cached lazyloaded"
           src="/images//grill.svg"
           width="39"
           height="172"
@@ -141,20 +102,20 @@
         />
         <div class="img-shadow"></div>
       </div>
-      <div class="container">
+      <div class="container px-4">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 banner-left">
-            <h1 class="color-black ali text-lg-start  font-30">
+            <h1 class="color-black ali text-start text-lg-start font-30">
               Voted the best
               <span class="green-color">cell phone monitoring software</span>
               by Entrepreneur, Engadget, and many more
             </h1>
-            <ul class="h-b-ul  text-white">
-              <li>
+            <ul class="h-b-ul text-start text-nowrap  text-white">
+              <li class="">
                 <img src="/images//circle.png" width="18px" height="18px" />
-                Social apps' screen recording (New)
+                Social apps screen recording
               </li>
-              <li>
+              <li >
                 <img src="/images//circle.png" width="18px" height="18px" />
                 Record calls and phone surroundings
               </li>
@@ -177,24 +138,24 @@
             </ul>
 
             <div
-              class="button-area d-flex justify-content-start gap-3 align-items-center"
-            >
+              class="button-area flex-sm-column flex-wrap flex-md-nowrap flex-lg-nowrap flex-sm-nowrap  flex-sm-wrap flex-lg-row flex-md-row justify-content-md-start align-items-md-center  justify-content-lg-around align-items-lg-center flex-xs-column d-flex justify-content-sm-start justify-content-xs-start gap-3 gap-md-3 align-items-sm-start justify-content-lg-center "
+            ><div class="d-flex flex-lg-row gap-2 flex-md-row justify-content-center align-items-center flex-sm-column ">
               <a class="btn btn-outline-success" href="buy-now.html">Buy Now</a>
               <a class="btn-2 blue-color" href="https://demo.xnspy.com"
                 >Live Demo</a
               >
-              <!-- <ul
-                class="baner-app m-t-30 mt-md-0 list-unstyled flex-lg-row d-flex gap-3 px-3 d-none"
+              </div>
+              <div
+                class="d-flex justify-content-around my-1 my-lg-0 my-md-0 my-sm-0  flex-row"
               >
-                <li>
-                  <i class="fa fa-android text-white" aria-hidden="true"></i>
-                  <a class="text-white" href="android-spy.html">Android</a>
-                </li>
-                <li>
-                  <i class="fa fa-apple text-white" aria-hidden="true"></i>
-                  <a class="text-white" href="iphone-spy.html">iPhone</a>
-                </li>
-              </ul> -->
+                <button class="button btn1  px-2"><svg class="  mb-1 me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" class="bi bi-android2" viewBox="0 0 16 16">
+  <path d="m10.213 1.471.691-1.26q.069-.124-.048-.192-.128-.057-.195.058l-.7 1.27A4.8 4.8 0 0 0 8.005.941q-1.032 0-1.956.404l-.7-1.27Q5.281-.037 5.154.02q-.117.069-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.7 3.7 0 0 0 3.5 5.02h9q0-1.125-.623-2.072a4.27 4.27 0 0 0-1.664-1.476ZM6.22 3.303a.37.37 0 0 1-.267.11.35.35 0 0 1-.263-.11.37.37 0 0 1-.107-.264.37.37 0 0 1 .107-.265.35.35 0 0 1 .263-.11q.155 0 .267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264m4.101 0a.35.35 0 0 1-.262.11.37.37 0 0 1-.268-.11.36.36 0 0 1-.112-.264q0-.154.112-.265a.37.37 0 0 1 .268-.11q.155 0 .262.11a.37.37 0 0 1 .107.265q0 .153-.107.264M3.5 11.77q0 .441.311.75.311.306.76.307h.758l.01 2.182q0 .414.292.703a.96.96 0 0 0 .7.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182q0 .414.292.703a.97.97 0 0 0 .71.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76q.436 0 .749-.308.31-.307.311-.75V5.365h-9zm10.495-6.587a.98.98 0 0 0-.702.278.9.9 0 0 0-.293.685v4.063q0 .406.293.69a.97.97 0 0 0 .702.284q.42 0 .712-.284a.92.92 0 0 0 .293-.69V6.146a.9.9 0 0 0-.293-.685 1 1 0 0 0-.712-.278m-12.702.283a1 1 0 0 1 .712-.283q.41 0 .702.283a.9.9 0 0 1 .293.68v4.063a.93.93 0 0 1-.288.69.97.97 0 0 1-.707.284 1 1 0 0 1-.712-.284.92.92 0 0 1-.293-.69V6.146q0-.396.293-.68"/>
+</svg>Android</button>
+                <button class="button btn2  px-3"><svg class="  mb-1 me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" class="bi bi-apple" viewBox="0 0 16 16">
+  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+</svg>Apple</button>
+              </div>
             </div>
           </div>
           <div class="col-12 col-lg-6 banner-right">
@@ -213,8 +174,8 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="heading-p">
-              <h2 class="black-color">
+            <div class="heading-p pb-4">
+              <h2 class="black-color ">
                 Monitor your loved ones and employes in 3 simple steps
               </h2>
               <p class="black-color">
@@ -300,7 +261,18 @@
               </div>
             </div>
           </div>
-          <div class="row m-t-60 mt-lg-50">
+          <div class="heading-p py-5 text-capitalize">
+              <h2 class="black-color">
+               What our satisfied customers have to say about us
+              </h2>
+              <p class="black-color">
+                Xnspy is just a download away. But, it all starts with choosing
+                the right subscription plan.
+              </p>
+              <p>Follow these steps and simplify all your monitoring needs</p>
+            </div>
+            
+          <div class="row ms-auto slider me-auto m-t-60 mt-lg-50">
             <div class="col-12 col-md-6 mb-3 col-lg-4">
               <!-- <div class="d-flex align-items-start d-lg-block"> -->
               <div class="card card-sec ">
@@ -397,9 +369,104 @@
                   </div>
                 </div>
               </div>
-              
             </div>
-
+            <div class="col-12 col-md-6 mb-3 col-lg-4">
+              <!-- <div class="d-flex align-items-start d-lg-block"> -->
+              <div class="card card-sec ">
+                <div class="card-body">
+                  <div class="d-flex flex-lg-row gap-2">
+                    <div class="circular--portrait">
+                      <img
+                        src="https://ca.slack-edge.com/T09RX1EUE-U066Y21BW2Z-7426e55dc15a-512"
+                      />
+                    </div>
+                    <div class="d-flex ms-1 flex-column">
+                      <h5 class="card-title text-sm-start text-success">
+                        Card title
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        Card subtitle
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column">
+                   
+                    <div class="d-flex gap-2 mt-2 justify-content-start">
+                      <div class="fs-4 gap-1 d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="text-sm-start m-0">
+                        <p class="grey-text">15.07.2022</p>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                      <a href="#" class="card-link">Show More</a>
+                    </p>
+                  </div>
+                </div>
+              </div>    
+            </div>
             <div class="col-12 col-md-6 mb-3 col-lg-4">
               <!-- <div class="d-flex align-items-start d-lg-block"> -->
               <div class="card card-sec ">
@@ -485,7 +552,7 @@
                         </svg>
                       </div>
                       <div class="text-sm-start m-0">
-                        <p class="grey-text">14.06.2021</p>
+                        <p class="grey-text">15.07.2022</p>
                       </div>
                     </div>
                     <p class="card-text">
@@ -495,8 +562,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
-              
+              </div>    
             </div>
            <div class="col-12 col-md-6 mb-3 col-lg-4">
               <!-- <div class="d-flex align-items-start d-lg-block"> -->
@@ -505,7 +571,7 @@
                   <div class="d-flex flex-lg-row gap-2">
                     <div class="circular--portrait">
                       <img
-                        src="https://ca.slack-edge.com/T09RX1EUE-U0WHGTDCM-38b372cc0320-192"
+                        src="https://ca.slack-edge.com/T09RX1EUE-U0WHAFBKQ-dd41942c312d-512"
                       />
                     </div>
                     <div class="d-flex ms-1 flex-column">
@@ -583,7 +649,7 @@
                         </svg>
                       </div>
                       <div class="text-sm-start m-0">
-                        <p class="grey-text">14.06.2021</p>
+                        <p class="grey-text">24.06.2017</p>
                       </div>
                     </div>
                     <p class="card-text">
@@ -594,8 +660,8 @@
                   </div>
                 </div>
               </div>
-              
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -621,49 +687,465 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="col-12 faq-s-inner">
-          <div class="row">
-            <div id="jeneral-q-tab" class="col-4 active-q">
-              <div
-                class="d-flex justify-content-center align-items-center flex-column text-center jeneral-q"
-                onclick="if (!window.__cfRLUnblockHandlers) return false; tabhideshow(this,'jeneral-q')"
-              >
-                <div class="faq-icn faq-icn-1"></div>
-                <div class="faq-info">
-                  <h3>
-                    General <br />
-                    Questions
-                  </h3>
+  <div class="row">
+    <div class="col-12">
+      <div class="col-12 faq-s-inner">
+        <ul class="nav  row nav-pills" id="pills-tab" role="tablist">
+
+          <li class="nav-item col-4" role="presentation" >
+            <div class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class="d-flex justify-content-center align-items-center flex-column text-center">
+              <!-- <img class="faq-icn faq-icn-3" src="/images/gen.svg" width="42px" height="42px" alt="Icon 1" /> -->
+                <div class="faq-icn faq-icn-3" ></div>
+              <h3 class="faq-info text-center">General <br> Questions</h3>
+            </div>
+            </div>
+          </li>
+
+          <li class="nav-item col-4" role="presentation">
+            <div class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <div class="d-flex justify-content-center align-items-center flex-column text-center">
+              <!-- <img src="/images/purc.svg" alt="Icon 2" width="42px" height="42px" /> -->
+              <div class="faq-icn faq-icn-1"></div>
+              <h3 class="faq-info">Purchase <br> Related</h3>
+            </div>
+            </div>
+          </li>
+
+          <li class="nav-item col-4" role="presentation">
+            <div class="nav-link" id="pills-third-tab" data-bs-toggle="pill" href="#pills-third" role="tab" aria-controls="pills-third" aria-selected="false">
+             <div class="d-flex justify-content-center align-items-center flex-column text-center"> 
+              <!-- <img src="/images/install.svg" alt="Icon 3" width="42px" height="42px" /> -->
+             <div class="faq-icn faq-icn-2"></div>
+              <h3 class="faq-info">Installation <br> Related</h3>
+            </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+      <div class="container px-lg-5 me-auto ms-auto py-5">
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="accordion" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    What devices are compatible with the Xnspy cell phone
+                    monitoring app?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    Xnspy works with most Android and iOS devices. For full
+                    information on device compatibility,
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Is Xnspy cell phone tapping software invisible?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    You can choose to hide the Xnspy cell phone spying app on
+                    the monitored user's cell phone. When you do so, the app
+                    will stay 100% invisible.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    How accurate is cell phone tracking?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    Cell phone tracking is highly accurate for both Android and
+                    iOS. However, with Android, you can get instant location
+                    details on your web account. On iOS, the frequency of
+                    location data backups is based on the frequency of iCloud
+                    backups.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Do spy apps work when the monitored phone is off?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    When a cell phone is off, there’s nothing to record or
+                    monitor. However, once the device turns on and connects to
+                    the internet and all those pending incoming texts or
+                    messages start rolling, Xnspy will start backing them up on
+                    your web account.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    Which is the best spy app?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    Xnspy has been voted as the best way to monitor a cell phone
+                    by many renowned independent review platforms like
+                    SiteJabber, Entrepreneur, Engadget, TrustPilot, etc. But you
+                    don’t have to take our word for it. Try Xnspy today with our
+                    10-day, money-back guarantee.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
                 </div>
               </div>
             </div>
-            <div id="purchase-q-tab" class="col-4">
-              <div
-                class="d-flex justify-content-center align-items-center flex-column text-center purchase-q"
-                onclick="if (!window.__cfRLUnblockHandlers) return false; tabhideshow(this,'purchase-q')"
-              >
-                <div class="faq-icn faq-icn-2"></div>
-                <div class="faq-info">
-                  <h3>
-                    Purchase <br />
-                    Related
-                  </h3>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="accordion" id="accordionFlushExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading1">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse1"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse1"
+                  >
+                    Are my credit card details safe with Xnspy?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse1"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample2"
+                >
+                  <div class="accordion-body text-bg-danger">
+                   We use a 100% secure checkout, so every transaction through our website is completely secure. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading3">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse3"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse3"
+                  >
+                    Will Xnspy show up on my credit card bill?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading3"
+                >
+                  <div class="accordion-body text-bg-danger">
+                   Xnspy will show up as Serfolet Ltd on your credit bill. 
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading4">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse4"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse4"
+                  >
+                   What is your refund policy?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading4"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    If you are not satisfied with your purchase of the Xnspy cell phone surveillance app, you qualify for a refund within the first 10 days of your purchase. Kindly refer to our Refund Page for more info.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading5">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse5"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse5"
+                  >
+                    Do spy apps work when the monitored phone is off?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading5"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    When a cell phone is off, there’s nothing to record or
+                    monitor. However, once the device turns on and connects to
+                    the internet and all those pending incoming texts or
+                    messages start rolling, Xnspy will start backing them up on
+                    your web account.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading6">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse6"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse6"
+                  >
+                    Which is the best spy app?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse6"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading6"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    Xnspy has been voted as the best way to monitor a cell phone
+                    by many renowned independent review platforms like
+                    SiteJabber, Entrepreneur, Engadget, TrustPilot, etc. But you
+                    don’t have to take our word for it. Try Xnspy today with our
+                    10-day, money-back guarantee.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
                 </div>
               </div>
             </div>
-            <div id="install-q-tab" class="col-4">
-              <div
-                class="d-flex justify-content-center align-items-center flex-column text-center install-q"
-                onclick="if (!window.__cfRLUnblockHandlers) return false; tabhideshow(this,'install-q')"
-              >
-                <div class="faq-icn faq-icn-3"></div>
-                <div class="faq-info">
-                  <h3>
-                    Installation <br />
-                    Related
-                  </h3>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-third"
+            role="tabpanel"
+            aria-labelledby="pills-third-tab"
+            tabindex="0"
+          >
+            <div class="accordion" id="accordionFlushExample3">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading11">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse11"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse11"
+                  >
+                    How to install Xnspy cell phone spy software on a phone?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse11"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading11"
+                  data-bs-parent="#accordionFlushExample3"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    Setting up Xnspy is easy, and we have a comprehensive guide for you to look over. If you still experience any difficulties, you can always contact us through our live chat available 24/7.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading33">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse33"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse33"
+                  >
+                   What are the prerequisites to set up Xnspy?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse33"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading33"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    You will need physical access to the phone you would like to monitor with Xnspy. You will also require any passcode required to bypass the lock screen. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading44">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse44"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse44"
+                  >
+                    Can Xnspy be reinstalled if a device gets stolen or replaced?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse44"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading44"
+                >
+                  <div class="accordion-body text-bg-danger">
+                   Our undetectable phone spy app can be reinstalled on another device as long as there’s just one active device. You might have to contact our support team to resolve this.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading55">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse55"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse55"
+                  >
+                    Do spy apps work when the monitored phone is off?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse55"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading55"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    When a cell phone is off, there’s nothing to record or
+                    monitor. However, once the device turns on and connects to
+                    the internet and all those pending incoming texts or
+                    messages start rolling, Xnspy will start backing them up on
+                    your web account.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading66">
+                  <button
+                    class="accordion-button collapsed accordion active-acor"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse66"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse66"
+                  >
+                    Which is the best spy app?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapse66"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-heading66"
+                >
+                  <div class="accordion-body text-bg-danger">
+                    Xnspy has been voted as the best way to monitor a cell phone
+                    by many renowned independent review platforms like
+                    SiteJabber, Entrepreneur, Engadget, TrustPilot, etc. But you
+                    don’t have to take our word for it. Try Xnspy today with our
+                    10-day, money-back guarantee.
+                    <a class="inhe-a" href="compatibility.html">click here</a>.
+                  </div>
                 </div>
               </div>
             </div>
@@ -671,85 +1153,9 @@
         </div>
       </div>
     </div>
-    <div class="row" id="jeneral-q">
-      <div class="col-12">
-        <div class="question-box2">
-          <div class="accordion " id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed  accordion active-acor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  What devices are compatible with the Xnspy cell phone monitoring app?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body text-bg-danger">
-                  Xnspy works with most Android and iOS devices. For full information on device compatibility,
-                  <a class="inhe-a" href="compatibility.html">click here</a>.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed  accordion active-acor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Is Xnspy cell phone tapping software invisible?
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" >
-                <div class="accordion-body text-bg-danger">
-                  You can choose to hide the Xnspy cell phone spying app on
-                      the monitored user's cell phone. When you do so, the app
-                      will stay 100% invisible.      
-                       <a class="inhe-a" href="compatibility.html">click here</a>.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed  accordion active-acor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-             How accurate is cell phone tracking?
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" >
-                <div class="accordion-body text-bg-danger">
-                  Cell phone tracking is highly accurate for both Android
-                      and iOS. However, with Android, you can get instant
-                      location details on your web account. On iOS, the
-                      frequency of location data backups is based on the
-                      frequency of iCloud backups.
-                  <a class="inhe-a" href="compatibility.html">click here</a>.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingFour">
-                <button class="accordion-button collapsed  accordion active-acor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                 Do spy apps work when the monitored phone is off?
-                </button>
-              </h2>
-              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" >
-                <div class="accordion-body text-bg-danger">
-                  When a cell phone is off, there’s nothing to record or monitor. However, once the device turns on and connects to the internet and all those pending incoming texts or messages start rolling, Xnspy will start backing them up on your web account.
-                  <a class="inhe-a" href="compatibility.html">click here</a>.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingFive">
-                <button class="accordion-button collapsed  accordion active-acor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                 Which is the best spy app?
-                </button>
-              </h2>
-              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" >
-                <div class="accordion-body text-bg-danger">
-                  Xnspy has been voted as the best way to monitor a cell phone by many renowned independent review platforms like SiteJabber, Entrepreneur, Engadget, TrustPilot, etc. But you don’t have to take our word for it. Try Xnspy today with our 10-day, money-back guarantee.
-                  <a class="inhe-a" href="compatibility.html">click here</a>.
-                </div>
-              </div>
-            </div>
-           
-          <div class="button-area-2 d-flex justify-content-center align-items-center">
-            <a class="btn btn-outline-success px-5" href="buy-now.html">Buy Now</a>
-          </div>
+          <div class="button-area-2 d-flex justify-content-center py-3 align-items-center">
+            <a class="btn btn-outline-success px-lg-5 " href="buy-now.html">Buy Now</a>
+          
         </div>
       </div>
     </div>
@@ -757,5 +1163,39 @@
 </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/slick.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <!-- <script src="/js/slider.js"></script> -->
+   <script type="text/javascript">
+  $(document).ready(function(){
+    function toggleSliderClass() {
+      if ($(window).width() >= 992) {
+        $('.slider').slick({
+          // Replace setting-name and setting-value with the actual configuration options
+          // For example:
+          dots: true,
+          autoplay: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 3,
+          slidesToScroll: 1
+        });
+      } else {
+        $('.slider').slick('unslick'); // Remove slick if it was initialized
+      }
+    }
+
+    // Initial toggle
+    toggleSliderClass();
+
+    // Toggle on window resize
+    $(window).resize(function() {
+      toggleSliderClass();
+    });
+  });
+</script>
+
+
   </body>
 </html>
